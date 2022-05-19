@@ -21,18 +21,21 @@
 
     <EditText
         android:id="@+id/textName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:ems="10"
+        android:hint="digite seu nome aqui"
         android:inputType="textPersonName"
-        android:text="Nome:"
-        app:layout_constraintBottom_toTopOf="@+id/textName"
+        app:layout_constraintBottom_toTopOf="@+id/textStarter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintVertical_bias="0.805" />
 
     <Button
         android:id="@+id/button"
@@ -42,7 +45,32 @@
         android:text="Clique no botão"
         app:layout_constraintBottom_toTopOf="@+id/textViewPadrao"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textName" />
+        app:layout_constraintTop_toBottomOf="@+id/textStarter2"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <EditText
+        android:id="@+id/textStarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Starter"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textStarter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textStarter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="digite seu starter"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="143dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
