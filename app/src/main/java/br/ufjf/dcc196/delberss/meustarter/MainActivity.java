@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView textViewMensagem = findViewById(R.id.textViewPadrao);
+        TextView textViewNome = findViewById(R.id.textName);
 
         textViewMensagem.setText("Olá, Mundo!");
+        textViewNome.setText("Digite seu nome:");
     }
 }
