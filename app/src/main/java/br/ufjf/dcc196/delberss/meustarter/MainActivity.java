@@ -3,6 +3,7 @@ package br.ufjf.dcc196.delberss.meustarter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,5 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         textViewMensagem.setText("Olá, Mundo!");
         textViewNome.setText("Digite seu nome:");
+    }
+
+    public void clicaBotao(View origem){
+        TextView textViemMensagem = findViewById(R.id.textViewPadrao);
+        textViemMensagem.setText("Hello, world!");
     }
 }
